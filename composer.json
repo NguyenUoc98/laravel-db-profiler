@@ -8,8 +8,8 @@
         "source": "https://github.com/dmitry-ivanov/laravel-db-profiler"
     },
     "authors": [{
-        "name": "Dmitry Ivanov",
-        "email": "dmitry.g.ivanov@gmail.com"
+        "name": "Nguyen Van Uoc",
+        "email": "uocnv.soict.hust@gmail.com"
     }],
     "require": {
         "php": "^7.3|^8.0",
