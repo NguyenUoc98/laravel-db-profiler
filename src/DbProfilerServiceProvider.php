@@ -2,8 +2,9 @@
 
 namespace Illuminated\Database;
 
+use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\ServiceProvider;
-use Illuminated\Database\Middleware\InjectQueries;
+use Illuminated\Database\Http\Middleware\InjectQueries;
 
 class DbProfilerServiceProvider extends ServiceProvider
 {
@@ -21,7 +22,7 @@ class DbProfilerServiceProvider extends ServiceProvider
     }
 
     private function registerMiddleware() {
-        $router = $this->app['router'];
-        $router->pushMiddlewareToGroup('web', InjectQueries::class);
+        $kernel = $this->app->make(Kernel::class);
+        $kernel->pushMiddleware(InjectQueries::class);
     }
 }
