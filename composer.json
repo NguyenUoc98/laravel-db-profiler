@@ -1,5 +1,5 @@
 {
-    "name": "illuminated/db-profiler",
+    "name": "uocnv/db-profiler",
     "description": "Database Profiler for Laravel Web and Console Applications.",
     "keywords": ["laravel", "db", "database", "profiler", "profiling", "query", "sql", "mysql", "web-profiling", "console-profiling"],
     "license": "MIT",
