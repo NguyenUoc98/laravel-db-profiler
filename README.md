@@ -4,7 +4,7 @@
 1. Install the package via Composer:
 
     ```shell script
-    composer require uocnv/db-profiler "1.1"
+    composer require uocnv/db-profiler
     ```
 2. Publish config
     ```shell script
